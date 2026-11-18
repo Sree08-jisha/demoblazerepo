@@ -1,0 +1,21 @@
+[
+{
+
+    "username" : "sreejisha",
+    "password" : "jisha@123"
+},
+
+
+{
+
+    "name"       : "Jisha",
+    "country"    : "India",
+    "city"       : "Trivandrum",
+    "creditcard" : "1234567812345678",
+    "month"      : "october",
+    "year"       :  "2026"
+
+
+
+}
+]

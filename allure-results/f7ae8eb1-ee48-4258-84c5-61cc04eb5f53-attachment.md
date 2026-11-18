@@ -1,0 +1,398 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: addtocart.spec.js >> Placing the order from phone section
+- Location: tests\addtocart.spec.js:23:6
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+=========================== logs ===========================
+waiting for event "dialog"
+============================================================
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f3e1]:
+  - dialog "Place order" [active] [ref=f3e2]:
+    - document [ref=f3e3]:
+      - generic [ref=f3e4]:
+        - generic [ref=f3e5]:
+          - heading "Place order" [level=5] [ref=f3e6]
+          - button "Close" [ref=f3e7] [cursor=pointer]: ×
+        - generic [ref=f3e9]:
+          - generic [ref=f3e10]: "Total: 16100"
+          - generic [ref=f3e11]:
+            - generic [ref=f3e12]: "Name:"
+            - 'textbox "Total: 16100 Name:" [ref=f3e13]': Jisha
+          - generic [ref=f3e14]:
+            - generic [ref=f3e15]: "Country:"
+            - textbox "Country:" [ref=f3e16]: India
+          - generic [ref=f3e17]:
+            - generic [ref=f3e18]: "City:"
+            - textbox "City:" [ref=f3e19]: Trivandrum
+          - generic [ref=f3e20]:
+            - generic [ref=f3e21]: "Credit card:"
+            - textbox "Credit card:" [ref=f3e22]: "1234567812345678"
+          - generic [ref=f3e23]:
+            - generic [ref=f3e24]: "Month:"
+            - textbox "Month:" [ref=f3e25]: october
+          - generic [ref=f3e26]:
+            - generic [ref=f3e27]: "Year:"
+            - textbox "Year:" [ref=f3e28]: "2026"
+        - generic [ref=f3e30]:
+          - button "Close" [ref=f3e31]
+          - button "Purchase" [ref=f3e32]
+  - text:             
+  - navigation [ref=f3e33]:
+    - generic [ref=f3e34]:
+      - link "PRODUCT STORE" [ref=f3e35] [cursor=pointer]:
+        - /url: index.html
+      - list [ref=f3e38]:
+        - listitem [ref=f3e39]:
+          - link "Home (current)" [ref=f3e40] [cursor=pointer]:
+            - /url: index.html
+            - text: Home
+            - generic [ref=f3e41]: (current)
+        - listitem [ref=f3e42]:
+          - link "Contact" [ref=f3e43] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f3e44]:
+          - link "About us" [ref=f3e45] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f3e46]:
+          - link "Cart" [ref=f3e47] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+        - listitem [ref=f3e48]:
+          - link "Log out" [ref=f3e49] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f3e50]:
+          - link "Welcome sreejisha" [ref=f3e51] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+  - generic [ref=f3e53]:
+    - generic [ref=f3e54]:
+      - heading "Products" [level=2] [ref=f3e55]
+      - table [ref=f3e57]:
+        - rowgroup [ref=f3e58]:
+          - row [ref=f3e59]:
+            - columnheader "Pic" [ref=f3e60]
+            - columnheader "Title" [ref=f3e61]
+            - columnheader "Price" [ref=f3e62]
+            - columnheader "x" [ref=f3e63]
+        - rowgroup [ref=f3e64]:
+          - row [ref=f3e65]:
+            - cell [ref=f3e66]
+            - cell "Nokia lumia 1520" [ref=f3e68]
+            - cell "820" [ref=f3e69]
+            - cell [ref=f3e70]:
+              - link "Delete" [ref=f3e71] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e72]:
+            - cell [ref=f3e73]
+            - cell "Nokia lumia 1520" [ref=f3e75]
+            - cell "820" [ref=f3e76]
+            - cell [ref=f3e77]:
+              - link "Delete" [ref=f3e78] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e79]:
+            - cell [ref=f3e80]
+            - cell "Nokia lumia 1520" [ref=f3e82]
+            - cell "820" [ref=f3e83]
+            - cell [ref=f3e84]:
+              - link "Delete" [ref=f3e85] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e86]:
+            - cell [ref=f3e87]
+            - cell "Nokia lumia 1520" [ref=f3e89]
+            - cell "820" [ref=f3e90]
+            - cell [ref=f3e91]:
+              - link "Delete" [ref=f3e92] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e93]:
+            - cell [ref=f3e94]
+            - cell "Samsung galaxy s6" [ref=f3e96]
+            - cell "360" [ref=f3e97]
+            - cell [ref=f3e98]:
+              - link "Delete" [ref=f3e99] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e100]:
+            - cell [ref=f3e101]
+            - cell "Samsung galaxy s6" [ref=f3e103]
+            - cell "360" [ref=f3e104]
+            - cell [ref=f3e105]:
+              - link "Delete" [ref=f3e106] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e107]:
+            - cell [ref=f3e108]
+            - cell "Nokia lumia 1520" [ref=f3e110]
+            - cell "820" [ref=f3e111]
+            - cell [ref=f3e112]:
+              - link "Delete" [ref=f3e113] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e114]:
+            - cell [ref=f3e115]
+            - cell "Samsung galaxy s6" [ref=f3e117]
+            - cell "360" [ref=f3e118]
+            - cell [ref=f3e119]:
+              - link "Delete" [ref=f3e120] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e121]:
+            - cell [ref=f3e122]
+            - cell "Nokia lumia 1520" [ref=f3e124]
+            - cell "820" [ref=f3e125]
+            - cell [ref=f3e126]:
+              - link "Delete" [ref=f3e127] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e128]:
+            - cell [ref=f3e129]
+            - cell "Nokia lumia 1520" [ref=f3e131]
+            - cell "820" [ref=f3e132]
+            - cell [ref=f3e133]:
+              - link "Delete" [ref=f3e134] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e135]:
+            - cell [ref=f3e136]
+            - cell "Samsung galaxy s6" [ref=f3e138]
+            - cell "360" [ref=f3e139]
+            - cell [ref=f3e140]:
+              - link "Delete" [ref=f3e141] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e142]:
+            - cell [ref=f3e143]
+            - cell "Samsung galaxy s6" [ref=f3e145]
+            - cell "360" [ref=f3e146]
+            - cell [ref=f3e147]:
+              - link "Delete" [ref=f3e148] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e149]:
+            - cell [ref=f3e150]
+            - cell "Nokia lumia 1520" [ref=f3e152]
+            - cell "820" [ref=f3e153]
+            - cell [ref=f3e154]:
+              - link "Delete" [ref=f3e155] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e156]:
+            - cell [ref=f3e157]
+            - cell "Samsung galaxy s6" [ref=f3e159]
+            - cell "360" [ref=f3e160]
+            - cell [ref=f3e161]:
+              - link "Delete" [ref=f3e162] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e163]:
+            - cell [ref=f3e164]
+            - cell "Nokia lumia 1520" [ref=f3e166]
+            - cell "820" [ref=f3e167]
+            - cell [ref=f3e168]:
+              - link "Delete" [ref=f3e169] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e170]:
+            - cell [ref=f3e171]
+            - cell "Nokia lumia 1520" [ref=f3e173]
+            - cell "820" [ref=f3e174]
+            - cell [ref=f3e175]:
+              - link "Delete" [ref=f3e176] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e177]:
+            - cell [ref=f3e178]
+            - cell "Nokia lumia 1520" [ref=f3e180]
+            - cell "820" [ref=f3e181]
+            - cell [ref=f3e182]:
+              - link "Delete" [ref=f3e183] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e184]:
+            - cell [ref=f3e185]
+            - cell "Nokia lumia 1520" [ref=f3e187]
+            - cell "820" [ref=f3e188]
+            - cell [ref=f3e189]:
+              - link "Delete" [ref=f3e190] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e191]:
+            - cell [ref=f3e192]
+            - cell "Nokia lumia 1520" [ref=f3e194]
+            - cell "820" [ref=f3e195]
+            - cell [ref=f3e196]:
+              - link "Delete" [ref=f3e197] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e198]:
+            - cell [ref=f3e199]
+            - cell "Nokia lumia 1520" [ref=f3e201]
+            - cell "820" [ref=f3e202]
+            - cell [ref=f3e203]:
+              - link "Delete" [ref=f3e204] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e205]:
+            - cell [ref=f3e206]
+            - cell "Nokia lumia 1520" [ref=f3e208]
+            - cell "820" [ref=f3e209]
+            - cell [ref=f3e210]:
+              - link "Delete" [ref=f3e211] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e212]:
+            - cell [ref=f3e213]
+            - cell "Nokia lumia 1520" [ref=f3e215]
+            - cell "820" [ref=f3e216]
+            - cell [ref=f3e217]:
+              - link "Delete" [ref=f3e218] [cursor=pointer]:
+                - /url: "#"
+          - row [ref=f3e219]:
+            - cell [ref=f3e220]
+            - cell "Nokia lumia 1520" [ref=f3e222]
+            - cell "820" [ref=f3e223]
+            - cell [ref=f3e224]:
+              - link "Delete" [ref=f3e225] [cursor=pointer]:
+                - /url: "#"
+    - generic [ref=f3e226]:
+      - heading "Total" [level=2] [ref=f3e227]
+      - heading "16100" [level=3] [ref=f3e230]
+      - button "Place Order" [ref=f3e231]
+  - generic [ref=f3e233]:
+    - generic [ref=f3e236]:
+      - heading "About Us" [level=4] [ref=f3e237]
+      - paragraph [ref=f3e238]: We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.
+    - generic [ref=f3e241]:
+      - heading "Get in Touch" [level=4] [ref=f3e242]
+      - paragraph [ref=f3e243]: "Address: 2390 El Camino Real"
+      - paragraph [ref=f3e244]: "Phone: +440 123456"
+      - paragraph [ref=f3e245]: "Email: demo@blazemeter.com"
+    - heading "PRODUCT STORE" [level=4] [ref=f3e249]
+  - contentinfo [ref=f3e251]:
+    - paragraph [ref=f3e252]: Copyright © Product Store
+  - generic [ref=f3e255]:
+    - heading "Thank you for your purchase!" [level=2] [ref=f3e261]
+    - paragraph [ref=f3e262]: "Id: 9239699Amount: 0 USDCard Number: 1234567812345678Name: JishaDate: 17/10/2026"
+    - button "OK" [ref=f3e265]
+```
+
+# Test source
+
+```ts
+  1   | import {expect} from '@playwright/test'
+  2   | export class Addtocart{
+  3   | 
+  4   |   constructor(page){
+  5   |   this.page = page
+  6   |   this.usernamefield= page.locator('#loginusername')
+  7   |   this.passwordfield= page.locator('#loginpassword')
+  8   |   this.loginbutton = page.locator('//button[text()="Log in"]')
+  9   |   this.producttaken = page.locator('//a[text()="Samsung galaxy s6"]')
+  10  |   this.addtocartoption = page.locator('//a[text()="Add to cart"]')
+  11  |   this.phones = page.locator('//a[text()="Phones"]')
+  12  |   this.naukialumiaphone = page.locator('//a[text()="Nokia lumia 1520"]')
+  13  |   this.cart = page.locator('//a[text()="Cart"]')
+  14  |   this.placeorder = page.locator('//button[text()="Place Order"]')
+  15  |   this.purchase = page.locator('//button[text()="Purchase"]')
+  16  | 
+  17  | 
+  18  |   this.namefield = page.locator('#name')
+  19  |   this.countryfield = page.locator('#country')
+  20  |   this.cityfield = page.locator('#city')
+  21  |   this.creditcardfield = page.locator('#card')
+  22  |   this.monthfield = page.locator('#month') 
+  23  |   this.yearfield = page.locator('#year')
+  24  | 
+  25  | 
+  26  | }
+  27  | 
+  28  | 
+  29  | async openApplication(){
+  30  |    await this.page.goto("https://www.demoblaze.com/")
+  31  | 
+  32  |    await this.page.locator('#login2').click()
+  33  | }
+  34  | 
+  35  | async openLoginDetails(username,password){
+  36  |   await this.usernamefield.fill(username)
+  37  |   await this.passwordfield.fill(password)
+  38  |   await this.loginbutton.click()
+  39  | 
+  40  | }
+  41  | 
+  42  | async product(){
+  43  |     await this.producttaken.click()
+  44  |     await this.addtocartoption.click()
+  45  | 
+  46  |     
+  47  |   const dialogPromise = this.page.waitForEvent('dialog')
+  48  | 
+  49  |   await this.addtocartoption.click()
+  50  | 
+  51  |   const dialog = await dialogPromise
+  52  | 
+  53  |   console.log(dialog.message())
+  54  |   console.log(dialog.type())
+  55  | 
+  56  |   expect(dialog.message()).toBe('Product added.')
+  57  | 
+  58  |   await dialog.accept()
+  59  | }
+  60  | 
+  61  | 
+  62  | async mobileproduct(){
+  63  | 
+  64  |   await this.phones.click()
+  65  |   await this.naukialumiaphone.click()
+  66  |   
+  67  |   const dialogPromise = this.page.waitForEvent('dialog')
+  68  | 
+  69  |   await this.addtocartoption.click()
+  70  | 
+  71  | 
+  72  |   const dialog = await dialogPromise
+  73  | 
+  74  |   console.log(dialog.message())
+  75  |   console.log(dialog.type())
+  76  | 
+  77  |   expect(dialog.message()).toBe('Product added.')
+  78  | 
+  79  |   await dialog.accept()
+  80  |   
+  81  |   await this.cart.click()
+  82  |   await this.placeorder.click()
+  83  | 
+  84  | 
+  85  | }
+  86  | 
+  87  | async placeorderdetails(name,country,city,creditcard,month,year){
+  88  |   await this.namefield.fill(name) 
+  89  |   await this.countryfield.fill(country)
+  90  |   await this.cityfield.fill(city)
+  91  |   await this.creditcardfield.fill(creditcard)
+  92  |   await this.monthfield.fill(month)
+  93  |   await this.yearfield.fill(year)
+  94  |    
+> 95  |   const dialogPromise = this.page.waitForEvent('dialog')
+      |                                   ^ Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+  96  |   
+  97  |   await this.purchase.click()
+  98  | 
+  99  |  const dialog = await dialogPromise
+  100 | 
+  101 |   console.log(dialog.message())
+  102 |   console.log(dialog.type())
+  103 | 
+  104 |   expect(dialog.message()).toBe('Thank you for your purchase')
+  105 | 
+  106 |   await dialog.accept()
+  107 | }
+  108 |   
+  109 |     
+  110 | }
+  111 | 
+  112 | 
+  113 | 
+  114 | 
+```

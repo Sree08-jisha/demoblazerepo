@@ -1,0 +1,4 @@
+Product added.
+alert
+Please fill out Name and Creditcard.
+alert
